@@ -1,0 +1,41 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    },
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"]
+    },
+    "terraform": {
+      "args": ["serve"],
+      "command": "terraform-ls",
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  },
+  "suggest.noselect": false,
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "tsserver.enableJavascript": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"javascript.suggest.autoImports": true,
+	"typescript.suggest.autoImports": true,
+	"html.enable": true,
+  "html.filetypes": ["html", "handlebars", "htmldjango"],
+  "css.enable": true,
+  "css.validate": true,
+  "diagnostic.errorSign": "x",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.checkCurrentLine": true,
+  "codeLens.enable": true
+}
