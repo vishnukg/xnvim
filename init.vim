@@ -22,6 +22,7 @@ Plug 'uiiaoo/java-syntax.vim'
 Plug 'vim-test/vim-test'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
+Plug 'ellisonleao/glow.nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -255,6 +256,7 @@ let NERDTreeAutoDeleteBuffer = 1
 "Making NERDTree prettier
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let g:NERDTreeMinimalMenu=1
 
 " NERDTree width
 let g:NERDTreeWinSize = 34 
@@ -540,3 +542,15 @@ nmap <silent> <leader>g :TestVisit<CR>
 
 "====================== Rust Language Settings======================
 let g:rustfmt_autosave = 1
+
+
+"====================== Glow Lua config Settings======================
+nmap <silent> <leader>md :Glow<CR>
+
+lua <<EOF
+require('glow').setup({
+  style = "dark",
+  width = 140,
+})
+EOF
+
