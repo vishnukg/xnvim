@@ -1,4 +1,18 @@
 "======================COC NVIM settings======================
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-pairs',
+  \ 'coc-highlight',
+  \ 'coc-rust-analyzer',
+  \ 'coc-java',
+  \ ]
+
+set hidden
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
