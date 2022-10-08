@@ -4,7 +4,7 @@ nmap <silent> <leader>md :Glow<CR>
 lua <<EOF
 require('glow').setup({
   style = "dark",
-  width = 140,
+  width = 200,
 })
 EOF
 
